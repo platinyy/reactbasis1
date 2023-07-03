@@ -2,17 +2,22 @@ import './App.css'
 function Header(){
   return(
     <header>
-    <nav>
-        <img src="https://cdn.cdnlogo.com/logos/r/85/react.svg" width="40px" />
+    <nav className='nav'>
+        <img src="https://cdn.cdnlogo.com/logos/r/85/react.svg" className='nav-logo' />
+        <ul className='nav-items'>
+          <li>Pricing</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
     </nav>
 </header>
   )
 }
 function Main(){
   return(
-    <div>
+    <div className='main-content'>
     <h1>Reasons I'm excited to learn React</h1>
-          <ol>
+          <ol className='main-list'>
               <li>It's a popular library, so I'll be 
               able to fit in with the cool kids!</li>
               <li>I'm more likely to get a job as a developer
@@ -23,7 +28,7 @@ function Main(){
 }
 function Footer(){
   return (
-    <footer>
+    <footer className='footer'>
     <small>© 2023 Platin's development. All rights reserved.</small>
 </footer>
   )
@@ -32,7 +37,7 @@ function App() {
   return (
     
       <div>
-         <Header/>
+        <Header/>
         <Main />
         <Footer />
          
