@@ -1,19 +1,44 @@
 import './App.css'
-
-function App() {
-  return (
-   <div>
-    <img src="https://cdn.cdnlogo.com/logos/r/85/react.svg" />
-    <h1>Fun facts about React</h1>
-    <ul>
-        <li>Was first released in 2013</li>
-        <li>Was originally created by Jordan Walke</li>
-        <li>Has well over 100k starts on Github</li>
-        <li>Is maintained by Facebook</li>
-        <li>Powers thousands of enterprise apps, including mobile apps</li>
-    </ul>
-   </div>
+function Header(){
+  return(
+    <header>
+    <nav>
+        <img src="https://cdn.cdnlogo.com/logos/r/85/react.svg" width="40px" />
+    </nav>
+</header>
   )
 }
+function Main(){
+  return(
+    <div>
+    <h1>Reasons I'm excited to learn React</h1>
+          <ol>
+              <li>It's a popular library, so I'll be 
+              able to fit in with the cool kids!</li>
+              <li>I'm more likely to get a job as a developer
+              if I know React</li>
+          </ol>
+      </div>
+  )
+}
+function Footer(){
+  return (
+    <footer>
+    <small>© 2023 Platin's development. All rights reserved.</small>
+</footer>
+  )
+}
+function App() {
+  return (
+    
+      <div>
+         <Header/>
+        <Main />
+        <Footer />
+         
+      </div>
+  )
+}
+
 
 export default App
